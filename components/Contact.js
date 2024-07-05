@@ -1,4 +1,3 @@
-// components/Contact.js
 import styled from 'styled-components';
 
 const ContactContainer = styled.div`

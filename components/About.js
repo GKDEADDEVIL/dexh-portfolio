@@ -1,4 +1,3 @@
-// components/About.js
 import styled from 'styled-components';
 
 const AboutContainer = styled.div`

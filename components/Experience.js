@@ -1,4 +1,3 @@
-// components/Experience.js
 import styled from 'styled-components';
 
 const ExperienceContainer = styled.div`

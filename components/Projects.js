@@ -1,4 +1,3 @@
-// components/Projects.js
 import styled from 'styled-components';
 
 const ProjectsContainer = styled.div`

@@ -1,4 +1,3 @@
-// pages/index.js
 import { useState } from 'react';
 import styled from 'styled-components';
 import Profile from '../components/Profile';
@@ -11,15 +10,17 @@ import Skills from '../components/Skills';
 const Container = styled.div`
   display: flex;
   height: 100vh;
-  background: #000;
+  background: rgba(0, 0, 0, 0.95);
+  border-radius: 15px;
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Comforter Brush", cursive;
 `;
 
 const Panel = styled.div`
-  width: 20%;
+  width: 14%;
   padding: 20px;
-  background: #111;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
   border-right: 1px solid #333;
   display: flex;
   flex-direction: column;
@@ -29,16 +30,20 @@ const Panel = styled.div`
 `;
 
 const CommandList = styled.div`
-  width: 100%;
+  width: 50%;
   padding-top: 10px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 `;
 
 const CommandItem = styled.li`
   list-style: none;
   cursor: pointer;
-  padding: 5px 0;
+  padding: 8px 0;
   &:hover {
-    background: #222;
+    background: #131842;
+    border-radius: 15px;
+    transition-duration: 1.4s;
   }
 `;
 
@@ -93,12 +98,12 @@ export default function Home() {
   const [input, setInput] = useState('');
 
   const commands = {
-    profile: <Profile />,
-    projects: <Projects />,
-    contact: <Contact />,
-    about: <About />,
-    exp: <Experience />,
-    skills: <Skills />,
+    Profile: <Profile />,
+    Projects: <Projects />,
+    Contact: <Contact />,
+    About: <About />,
+    Experience: <Experience />,
+    Skills: <Skills />,
     clear: () => setHistory([]),  // Clear command
   };
 
@@ -122,7 +127,7 @@ export default function Home() {
     setInput(command);
     setTimeout(() => {
       executeCommand(command);
-    }, 100); // Slight delay to simulate typing effect
+    }, 100); 
   };
 
   const handleClearClick = () => {
@@ -140,7 +145,6 @@ export default function Home() {
             </CommandItem>
           ))}
         </CommandList>
-        <ClearButton onClick={handleClearClick}>Clear</ClearButton>
       </Panel>
       <Terminal>
         <InputArea>

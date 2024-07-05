@@ -1,4 +1,3 @@
-// components/Skills.js
 import styled from 'styled-components';
 
 const SkillsContainer = styled.div`

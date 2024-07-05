@@ -1,12 +1,14 @@
-// components/Profile.js
+
 import styled from 'styled-components';
+import Image from 'next/image';
+
 
 const ProfileContainer = styled.div`
   display: flex;
   align-items: center;
   background: #222;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-top: 20px;
 `;
 
@@ -32,7 +34,7 @@ const ProfileImage = styled.img`
 const Profile = () => {
   return (
     <ProfileContainer>
-      <ProfileImage src="/path/to/your/image.png" alt="Profile Picture" />
+      <ProfileImage src="/assets/profile.jpg" alt="Profile Picture"/>
       <Info>
         <Label>Full name:</Label>
         <Value>Kalyan Gopalam</Value>
