@@ -6,7 +6,7 @@ const ContactContainer = styled.div`
   border-radius: 5px;
   margin-top: 20px;
 `;
-
+ 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
