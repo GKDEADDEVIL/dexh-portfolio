@@ -10,7 +10,7 @@ const SkillsContainer = styled.div`
 const Skill = styled.div`
   margin-bottom: 10px;
 `;
-
+ 
 const Skills = () => {
   return (
     <SkillsContainer>
